@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Média Ponderada</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado da Média Ponderada</h1>
+        <div id="mensagem"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var disciplina = localStorage.getItem('disciplina');
+            var media = parseFloat(localStorage.getItem('media'));
+
+            var mensagem = `Média Ponderada em ${disciplina}: ${media.toFixed(2)}. `;
+            if (media > 5) {
+                mensagem += 'Parabéns, você passou!';
+            } else {
+                mensagem += 'Infelizmente, você está em recuperação.';
+            }
+
+            document.getElementById('mensagem').innerHTML = mensagem;
+        });
+    </script>
+</body>
+</html>

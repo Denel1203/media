@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Média Ponderada</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="recuperacao">
+    <div class="container">
+        <h1>Recuperação</h1>
+        <p id="mensagem"></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mensagem = localStorage.getItem('mensagem');
+            var media = parseFloat(localStorage.getItem('media'));
+            mensagem += ` Sua média foi ${media.toFixed(2)}.`;
+            document.getElementById('mensagem').innerHTML = mensagem;
+        });
+    </script>
+</body>
+</html>

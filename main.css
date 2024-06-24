@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('daniel.jpeg'); /* Imagem de fundo padrão */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.recuperacao {
+    background-image: url('willim.jpeg'); /* Imagem de fundo para a página de recuperação */
+    background-size: contain; /* Ajusta o tamanho da imagem de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parabens {
+    background-image: url('willim.jpeg'); /* Imagem de fundo para a página de parabéns */
+    background-size: contain; /* Ajusta o tamanho da imagem de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(252, 250, 250, 0.8); /* Fundo do container com transparência */
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra mais visível */
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espaçamento entre os grupos de formulário */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Espaçamento abaixo do label */
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    width: calc(100% - 20px); /* Ajusta a largura para compensar o padding */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultado, #mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+}
